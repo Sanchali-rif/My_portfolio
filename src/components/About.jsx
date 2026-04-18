@@ -13,24 +13,24 @@ const About = () => {
           <div style={{ display: 'flex', alignItems: 'center', marginBottom: '3rem' }}>
             <div style={{ 
               position: 'relative', 
-              width: '60px', 
-              height: '60px', 
+              width: '40px', 
+              height: '40px', 
               borderRadius: '50%', 
               border: '1.5px solid rgba(228, 61, 18, 0.4)', 
               display: 'flex', 
               alignItems: 'center', 
               justifyContent: 'center' 
             }}>
-              <div style={{ width: '8px', height: '8px', backgroundColor: 'var(--c-red, #E43D12)', borderRadius: '50%' }}></div>
-              <div style={{ position: 'absolute', left: '100%', top: '50%', width: '50px', height: '1.5px', backgroundColor: 'rgba(228, 61, 18, 0.4)' }}></div>
+              <div style={{ width: '6px', height: '6px', backgroundColor: 'var(--c-red, #E43D12)', borderRadius: '50%' }}></div>
+              <div style={{ position: 'absolute', left: '100%', top: '50%', width: '40px', height: '1.5px', backgroundColor: 'rgba(228, 61, 18, 0.4)' }}></div>
             </div>
             <span style={{ 
               color: 'var(--c-red, #E43D12)', 
-              letterSpacing: '4px', 
-              fontSize: '1.5rem', 
+              letterSpacing: '5px', 
+              fontSize: '2rem', 
               textTransform: 'uppercase', 
-              fontWeight: 700, 
-              marginLeft: '60px' 
+              fontWeight: 900, 
+              marginLeft: '50px' 
             }}>
               About Me
             </span>
@@ -42,7 +42,7 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             style={{ 
-              fontSize: 'clamp(3.5rem, 5vw, 5rem)', 
+              fontSize: 'clamp(2.5rem, 4vw, 3.8rem)', 
               fontFamily: "'Playfair Display', Georgia, serif", 
               lineHeight: 1.1, 
               marginBottom: '4rem',
@@ -63,9 +63,10 @@ const About = () => {
             transition={{ delay: 0.2 }}
             style={{ 
               fontFamily: "'Fira Code', 'Courier New', monospace", 
-              fontSize: '1rem', 
+              fontSize: '1.05rem', 
+              fontWeight: 600,
               lineHeight: 1.8, 
-              color: '#333',
+              color: '#222',
               maxWidth: '550px',
               marginBottom: '4rem'
             }}
@@ -86,26 +87,31 @@ const About = () => {
             transition={{ delay: 0.4 }}
             style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}
           >
-            {['REACT.JS', 'UI/UX', 'FIGMA', 'FIREBASE', 'MOTION', '3D / SPLINE', 'GRAPHIC DESIGN'].map((tag, idx) => (
+            {['REACT.JS', 'REACT NATIVE', 'PYTHON', 'JAVA', 'C', 'MYSQL', 'UI/UX', 'FIGMA', 'FIREBASE', 'MOTION', '3D / SPLINE', 'GRAPHIC DESIGN', 'GIT', 'GITHUB', 'VERCEL', 'RENDER', 'POSTMAN'].map((tag, idx) => (
               <div key={idx} style={{
                 padding: '0.6rem 1.2rem',
-                border: '1px solid rgba(0,0,0,0.15)',
-                color: '#444',
+                border: '2px solid rgba(0,0,0,0.8)',
+                color: '#fff',
                 fontFamily: "'Fira Code', 'Courier New', monospace",
-                fontSize: '0.85rem',
+                fontSize: '0.95rem',
+                fontWeight: 700,
                 letterSpacing: '1px',
-                clipPath: 'polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)',
-                background: 'rgba(0,0,0,0.03)',
-                transition: 'background 0.3s ease, color 0.3s ease',
+                clipPath: 'polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)',
+                background: '#1a1a1a',
+                transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
                 cursor: 'pointer'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(0,0,0,0.1)';
-                e.currentTarget.style.color = '#111';
+                e.currentTarget.style.background = 'var(--c-red, #E43D12)';
+                e.currentTarget.style.color = '#fff';
+                e.currentTarget.style.borderColor = 'var(--c-red, #E43D12)';
+                e.currentTarget.style.transform = 'translateY(-4px)';
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'rgba(0,0,0,0.03)';
-                e.currentTarget.style.color = '#444';
+                e.currentTarget.style.background = '#1a1a1a';
+                e.currentTarget.style.color = '#fff';
+                e.currentTarget.style.borderColor = 'rgba(0,0,0,0.8)';
+                e.currentTarget.style.transform = 'translateY(0)';
               }}
               >
                 {tag}
