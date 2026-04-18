@@ -22,36 +22,49 @@ const Project = () => {
         </motion.h2>
 
         <motion.div
-          className="glass-dark"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
-          transition={{ duration: 0.6 }}
-          style={{
-            padding: '4rem',
-            borderRadius: '32px',
-            background: 'rgba(255, 255, 255, 0.4)',
-            border: '1px solid rgba(255,255,255,0.6)',
-            boxShadow: '0 20px 40px rgba(0,0,0,0.05)',
-            color: 'var(--text-dark)'
-          }}
+           initial={{ opacity: 0, y: 50 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           viewport={{ once: true, amount: 0.2 }}
+           transition={{ duration: 0.6 }}
+           style={{
+             position: 'relative',
+             background: '#191717', // Cyberpunk dark card for intense contrast against light background
+             padding: '4rem 3rem',
+             clipPath: 'polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 40px 100%, 0 calc(100% - 40px))',
+             boxShadow: '0 30px 60px rgba(0,0,0,0.5)',
+             color: '#fff',
+             border: 'none',
+             margin: '0 auto',
+             maxWidth: '800px'
+           }}
         >
-          <h3 style={{ fontSize: '3rem', fontFamily: 'var(--font-sans)', fontWeight: 800, marginBottom: '1rem', color: 'var(--c-red)', textTransform: 'uppercase' }}>Civic Lens</h3>
+          {/* Top gradient accent line using prime color palette */}
+          <div style={{ 
+            position: 'absolute', 
+            top: 0, 
+            left: 0, 
+            width: '100%', 
+            height: '4px', 
+            background: 'linear-gradient(90deg, var(--c-red), var(--c-yellow))' 
+          }}></div>
           
-          <p style={{ fontSize: '1.4rem', marginBottom: '2rem', fontWeight: 500 }}>
+          <h3 style={{ fontSize: '3.5rem', fontFamily: "'Playfair Display', Georgia, serif", fontWeight: 500, marginBottom: '1rem', color: '#fff', textTransform: 'uppercase' }}>Civic Lens</h3>
+          
+          <p style={{ fontFamily: "'Fira Code', 'Courier New', monospace", fontSize: '1.1rem', marginBottom: '2.5rem', color: '#b0b0b0', fontWeight: 500, lineHeight: 1.6 }}>
             A web platform designed to analyze and highlight civic issues using AI-powered image processing.
           </p>
 
-          <ul style={{ listStyleType: 'none', padding: 0, marginBottom: '3rem', fontSize: '1.2rem', lineHeight: 1.8 }}>
-            <li><span style={{ color: 'var(--c-pink)', marginRight: '10px' }}>✦</span> Built a responsive frontend using React.js</li>
-            <li><span style={{ color: 'var(--c-pink)', marginRight: '10px' }}>✦</span> Integrated Firebase for backend services</li>
-            <li><span style={{ color: 'var(--c-pink)', marginRight: '10px' }}>✦</span> Used Vision API for image-based analysis</li>
-            <li><span style={{ color: 'var(--c-pink)', marginRight: '10px' }}>✦</span> Focused on usability and real-world problem solving</li>
+          <ul style={{ listStyleType: 'none', padding: 0, marginBottom: '3rem', fontSize: '1.1rem', lineHeight: 2, fontFamily: "'Fira Code', 'Courier New', monospace", color: '#e0e0e0' }}>
+            <li><span style={{ color: 'var(--c-red)', marginRight: '15px' }}>✦</span> Built a responsive frontend using React.js</li>
+            <li><span style={{ color: 'var(--c-yellow)', marginRight: '15px' }}>✦</span> Integrated Firebase for backend services</li>
+            <li><span style={{ color: 'var(--c-pink)', marginRight: '15px' }}>✦</span> Used Vision API for image-based analysis</li>
+            <li><span style={{ color: 'var(--c-red)', marginRight: '15px' }}>✦</span> Focused on usability and real-world problem solving</li>
           </ul>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <p style={{ fontSize: '1.1rem', fontWeight: 600 }}>
-              <span style={{ color: 'var(--c-red)' }}>Tech:</span> React.js, Firebase, Vision API, PHP
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '2.5rem' }}>
+            <p style={{ fontSize: '0.9rem', fontFamily: "'Fira Code', 'Courier New', monospace", color: 'var(--c-yellow)', textTransform: 'uppercase', letterSpacing: '2px' }}>
+              <span style={{ fontWeight: 800 }}>Tech Stack</span> <br/>
+              <span style={{ color: '#fff', fontSize: '1.2rem', marginTop: '0.8rem', display: 'inline-block' }}>React.js · Firebase · Vision API · PHP</span>
             </p>
             <a 
               href="https://civic-lens-zeta.vercel.app" 
@@ -59,20 +72,30 @@ const Project = () => {
               rel="noreferrer"
               style={{
                 display: 'inline-block',
-                background: 'var(--text-dark)', 
-                color: 'var(--c-bg)', 
+                background: 'var(--c-red)', 
+                color: '#fff', 
                 padding: '1rem 2.5rem', 
-                borderRadius: '50px', 
+                clipPath: 'polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px)',
+                fontFamily: "'Fira Code', 'Courier New', monospace",
                 fontSize: '1.1rem', 
-                fontWeight: 600, 
-                transition: '0.3s transform',
+                fontWeight: 800, 
+                transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
                 alignSelf: 'flex-start',
+                textDecoration: 'none',
                 marginTop: '1rem'
               }}
-              onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.05)'}
-              onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = 'var(--c-yellow)';
+                e.currentTarget.style.color = '#111';
+                e.currentTarget.style.transform = 'translateY(-4px)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'var(--c-red)';
+                e.currentTarget.style.color = '#fff';
+                e.currentTarget.style.transform = 'translateY(0)';
+              }}
             >
-              Visit Live Site
+              VISIT LIVE SITE
             </a>
           </div>
         </motion.div>

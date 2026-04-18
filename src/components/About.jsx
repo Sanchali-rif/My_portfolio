@@ -72,10 +72,10 @@ const About = () => {
             }}
           >
             <p style={{ marginBottom: '2rem' }}>
-              Based in <span style={{ color: '#5eb3ad' }}>Kolkata</span>, I'm a frontend developer and designer working at the intersection of aesthetics and functionality. My focus is not just building interfaces — but creating experiences that feel intuitive, engaging, and purposeful.
+              Based in <span style={{ color: '#FF1493', fontWeight: 900 }}>Kolkata</span>, I'm a frontend developer and designer working at the intersection of aesthetics and functionality. My focus is not just building interfaces — but creating experiences that feel intuitive, engaging, and purposeful.
             </p>
             <p style={{ marginBottom: '2rem' }}>
-              Currently, I'm focused on <span style={{ color: '#5eb3ad' }}>full-stack web development</span> while continuing to explore interactive design, motion, and 3D experiences. I'm open to freelance projects and collaborations where I can contribute to meaningful, impactful work.
+              Currently, I'm focused on <span style={{ color: '#FF1493', fontWeight: 900 }}>full-stack web development</span> while continuing to explore interactive design, motion, and 3D experiences. I'm open to freelance projects and collaborations where I can contribute to meaningful, impactful work.
             </p>
           </motion.div>
 
