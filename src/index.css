@@ -1,0 +1,101 @@
+:root {
+  /* Colors from the provided image palette */
+  --c-red: #E43D12;
+  --c-pink: #D6536D;
+  --c-light-pink: #FFA2B6;
+  --c-yellow: #EFB11D;
+  --c-bg: #EBE9E1;
+
+  --text-dark: #1F1F1F;
+  --text-light: #EBE9E1;
+
+  /* Typography */
+  --font-sans: 'Smooch Sans', sans-serif;
+  --font-cursive: 'Great Vibes', cursive;
+  
+  --spacing: 1rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--c-bg);
+  color: var(--text-dark);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  line-height: 1.5;
+  cursor: none; /* Hide default cursor to use a custom one! */
+}
+
+/* Glassmorphism utilities */
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+}
+
+.glass-dark {
+  background: rgba(31, 31, 31, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.title-cursive {
+  font-family: var(--font-cursive);
+  font-size: clamp(3rem, 8vw, 6rem);
+  color: var(--c-red);
+}
+
+.title-sans {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: clamp(4rem, 12vw, 10rem);
+  line-height: 0.8;
+  letter-spacing: -2px;
+  color: var(--c-red);
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--c-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--c-pink);
+  border-radius: 4px;
+}
+
+/* Reset Links and Buttons */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: none;
+}
+
+button {
+  cursor: none;
+  border: none;
+  font-family: inherit;
+}
