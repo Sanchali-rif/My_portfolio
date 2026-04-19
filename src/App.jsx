@@ -8,6 +8,7 @@ import Project from './components/Project';
 import GithubGraph from './components/GithubGraph';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
+import Education from './components/Education';
 import ShapeGrid from './components/ShapeGrid';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Project />
         <GithubGraph />
         <Experience />
+        <Education />
         <Contact />
       </main>
     </>
