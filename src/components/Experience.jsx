@@ -25,14 +25,14 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" style={{ padding: '4rem 2rem', color: 'var(--text-dark)' }}>
+    <section id="experience" style={{ padding: '7rem 2rem 2rem 2rem', color: 'var(--text-dark)' }}>
       <div style={{ maxWidth: '1000px', width: '100%', margin: '0 auto' }}>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="section-header"
-          style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', marginBottom: '4rem' }}
+          style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', marginBottom: '2.5rem' }}
         >
           <div style={{ 
             position: 'relative', 
@@ -59,7 +59,7 @@ const Experience = () => {
           </span>
         </motion.div>
 
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           {experiences.map((exp, index) => (
             <motion.div 
               key={index}
@@ -73,16 +73,16 @@ const Experience = () => {
                 position: 'relative'
               }}
             >
-              <h3 style={{ fontSize: '2rem', fontWeight: 800, textTransform: 'uppercase', marginBottom: '0.5rem' }}>{exp.title}</h3>
-              <p style={{ fontSize: '1.2rem', color: 'var(--c-pink)', fontWeight: 600, marginBottom: '1.5rem' }}>
+              <h3 style={{ fontSize: 'clamp(2.2rem, 5vw, 3rem)', fontWeight: 900, textTransform: 'uppercase', marginBottom: '0.2rem', letterSpacing: '-1px', color: 'var(--text-dark)' }}>{exp.title}</h3>
+              <p style={{ fontSize: '1.6rem', color: 'var(--c-pink)', fontWeight: 800, marginBottom: '0.5rem' }}>
                 {exp.company}
                 {exp.link && (
-                 <a href={exp.link} target="_blank" rel="noreferrer" style={{ marginLeft: '10px', fontSize: '1rem', textDecoration: 'underline' }}>View Site</a>
+                 <a href={exp.link} target="_blank" rel="noreferrer" style={{ marginLeft: '12px', fontSize: '1.2rem', textDecoration: 'underline', fontWeight: 700 }}>View Site</a>
                 )}
               </p>
-              <ul style={{ listStyleType: 'none', padding: 0, fontSize: '1.2rem', lineHeight: 1.6 }}>
+              <ul style={{ listStyleType: 'none', padding: 0, fontSize: '1.4rem', fontWeight: 600, lineHeight: 1.4, color: '#222' }}>
                 {exp.points.map((point, i) => (
-                  <li key={i} style={{ marginBottom: '0.8rem' }}>
+                  <li key={i} style={{ marginBottom: '0.4rem' }}>
                     <span style={{ color: 'var(--c-red)', marginRight: '10px' }}>•</span>{point}
                   </li>
                 ))}
