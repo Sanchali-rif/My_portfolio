@@ -1,7 +1,9 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Education = () => {
+  const { scrollYProgress } = useScroll();
+  const yPos = useTransform(scrollYProgress, [0, 1], [100, -100]);
   const educationList = [
     {
       school: "RCC Institute of Information Technology",
@@ -14,8 +16,11 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" style={{ padding: '7rem 2rem 2rem 2rem', color: 'var(--text-dark)' }}>
-      <div style={{ maxWidth: '1000px', width: '100%', margin: '0 auto' }}>
+    <section id="education" style={{ padding: '7rem 2rem 2rem 2rem', color: 'var(--text-dark)', position: 'relative', overflow: 'hidden' }}>
+      {/* Decorative left-side background gradient (Light Yellow & Orange Mix) */}
+      <motion.div style={{ position: 'absolute', top: '-10%', left: '-15%', width: '50vw', height: '50vw', background: 'linear-gradient(135deg, rgba(255, 235, 130, 0.7), rgba(255, 180, 80, 0.5))', borderRadius: '50%', filter: 'blur(100px)', zIndex: 0, opacity: 0.6, y: yPos }} />
+
+      <div style={{ maxWidth: '1000px', width: '100%', margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
