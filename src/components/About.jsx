@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   return (
-    <section id="about" style={{ padding: '4rem 2rem', display: 'flex', justifyContent: 'center', width: '100%', color: 'var(--text-dark)', position: 'relative', zIndex: 2 }}>
+    <section id="about" style={{ padding: '8rem 2rem 4rem 2rem', display: 'flex', justifyContent: 'center', width: '100%', color: 'var(--text-dark)', position: 'relative', zIndex: 2 }}>
       <div style={{ maxWidth: '1200px', width: '100%', display: 'flex', gap: '6rem', flexWrap: 'wrap' }}>
         
         {/* Left Column */}
         <div style={{ flex: '1 1 500px' }}>
           
           {/* ABOUT ME Pre-header */}
-          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '3rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1.2rem' }}>
             <div style={{ 
               position: 'relative', 
               width: '40px', 
@@ -42,17 +42,17 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             style={{ 
-              fontSize: 'clamp(2.5rem, 4vw, 3.8rem)', 
+              fontSize: 'clamp(2.2rem, 3.5vw, 3.2rem)', 
               fontFamily: "'Playfair Display', Georgia, serif", 
               lineHeight: 1.1, 
-              marginBottom: '4rem',
+              marginBottom: '1.5rem',
               fontWeight: 500,
               color: 'var(--text-dark, #111)'
             }}
           >
             I turn bold ideas <br/>
             into <br/>
-            <i style={{ fontWeight: 'normal', fontStyle: 'italic', color: '#444' }}>experiences people <br/> remember.</i>
+            <i style={{ fontWeight: 'normal', fontStyle: 'italic', color: 'var(--c-yellow)' }}>experiences people <br/> remember.</i>
           </motion.h2>
 
           {/* Paragraphs */}
@@ -68,13 +68,13 @@ const About = () => {
               lineHeight: 1.8, 
               color: '#222',
               maxWidth: '550px',
-              marginBottom: '4rem'
+              marginBottom: '2rem'
             }}
           >
-            <p style={{ marginBottom: '2rem' }}>
+            <p style={{ marginBottom: '0.8rem' }}>
               Based in <span style={{ color: '#FF1493', fontWeight: 900 }}>Kolkata</span>, I'm a frontend developer and designer working at the intersection of aesthetics and functionality. My focus is not just building interfaces — but creating experiences that feel intuitive, engaging, and purposeful.
             </p>
-            <p style={{ marginBottom: '2rem' }}>
+            <p style={{ marginBottom: '0.8rem' }}>
               Currently, I'm focused on <span style={{ color: '#FF1493', fontWeight: 900 }}>full-stack web development</span> while continuing to explore interactive design, motion, and 3D experiences. I'm open to freelance projects and collaborations where I can contribute to meaningful, impactful work.
             </p>
           </motion.div>
@@ -94,7 +94,7 @@ const About = () => {
               position: 'relative',
               background: '#191717', // slight dark brownish/grey tint like the design
               width: '100%',
-              padding: '4rem 3rem',
+              padding: '2rem 2.5rem',
               clipPath: 'polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 40px 100%, 0 calc(100% - 40px))',
               boxShadow: '0 30px 60px rgba(0,0,0,0.5)'
             }}
@@ -110,8 +110,8 @@ const About = () => {
             }}></div>
 
             {/* Card Content Sections */}
-            <div style={{ position: 'relative', zIndex: 1, borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '2.5rem', marginBottom: '2.5rem' }}>
-              <p style={{ color: '#5eb3ad', fontFamily: "'Fira Code', 'Courier New', monospace", textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
+            <div style={{ position: 'relative', zIndex: 1, borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+              <p style={{ color: 'var(--c-yellow)', fontFamily: "'Fira Code', 'Courier New', monospace", textTransform: 'uppercase', letterSpacing: '2px', fontSize: '1rem', fontWeight: 800, marginBottom: '0.5rem' }}>
                 Current Focus
               </p>
               <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '2.4rem', color: '#fff', fontWeight: 500, lineHeight: 1.2 }}>
@@ -119,8 +119,8 @@ const About = () => {
               </h3>
             </div>
 
-            <div style={{ position: 'relative', zIndex: 1, borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '2.5rem', marginBottom: '2.5rem' }}>
-              <p style={{ color: '#5eb3ad', fontFamily: "'Fira Code', 'Courier New', monospace", textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
+            <div style={{ position: 'relative', zIndex: 1, borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '1rem', marginBottom: '1rem' }}>
+              <p style={{ color: 'var(--c-yellow)', fontFamily: "'Fira Code', 'Courier New', monospace", textTransform: 'uppercase', letterSpacing: '2px', fontSize: '1rem', fontWeight: 800, marginBottom: '0.5rem' }}>
                 Location
               </p>
               <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.8rem', color: '#fff', fontWeight: 500 }}>
@@ -129,12 +129,12 @@ const About = () => {
             </div>
 
             <div style={{ position: 'relative', zIndex: 1 }}>
-              <p style={{ color: '#5eb3ad', fontFamily: "'Fira Code', 'Courier New', monospace", textTransform: 'uppercase', letterSpacing: '2px', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
+              <p style={{ color: 'var(--c-yellow)', fontFamily: "'Fira Code', 'Courier New', monospace", textTransform: 'uppercase', letterSpacing: '2px', fontSize: '1rem', fontWeight: 800, marginBottom: '0.5rem' }}>
                 Availability
               </p>
-              <p style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.5rem', color: '#5eb3ad', fontStyle: 'italic' }}>
+              <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.8rem', color: '#fff', fontWeight: 500 }}>
                 Open to Freelance & Collab
-              </p>
+              </h3>
             </div>
 
           </motion.div>
