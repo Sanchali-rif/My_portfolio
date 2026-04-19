@@ -33,8 +33,8 @@ const Contact = () => {
         </p>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', marginBottom: '4rem' }}>
-          <a href="mailto:sanchalisaha05@gmail.com" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.2rem', fontWeight: 600, color: 'var(--text-dark)' }}>
-            <Mail /> Email
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanchalisaha05@gmail.com" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.2rem', fontWeight: 600, color: 'var(--text-dark)' }}>
+            <Mail /> Gmail
           </a>
           <a href="https://linkedin.com/in/sanchali-saha-6b4aa6328" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.2rem', fontWeight: 600, color: 'var(--text-dark)' }}>
             LinkedIn
@@ -45,12 +45,12 @@ const Contact = () => {
         </div>
 
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '4rem' }}>
-          <a href="mailto:sanchalisaha05@gmail.com" style={{
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanchalisaha05@gmail.com" target="_blank" rel="noreferrer" style={{
             background: 'var(--c-yellow)', color: 'var(--text-dark)', padding: '1rem 3rem', borderRadius: '50px', fontSize: '1.2rem', fontWeight: 800, textTransform: 'uppercase'
           }}>
             Hire Me
           </a>
-          <a href="mailto:sanchalisaha05@gmail.com" style={{
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanchalisaha05@gmail.com" target="_blank" rel="noreferrer" style={{
             background: 'transparent', border: '2px solid var(--c-yellow)', color: 'var(--c-yellow)', padding: '1rem 3rem', borderRadius: '50px', fontSize: '1.2rem', fontWeight: 800, textTransform: 'uppercase'
           }}>
             Let's Talk
