@@ -28,7 +28,7 @@ const Contact = () => {
         <h2 className="title-sans" style={{ color: 'var(--c-yellow)', marginBottom: '1.5rem', lineHeight: 0.9 }}>Let's build</h2>
         <h2 className="title-sans" style={{ color: 'var(--text-dark)', marginBottom: '1.5rem', lineHeight: 0.9 }}>something impactful.</h2>
 
-        <p style={{ fontSize: '1.4rem', maxWidth: '600px', margin: '0 auto 2rem auto', color: 'var(--c-red)', fontWeight: 500 }}>
+        <p style={{ fontSize: '1.4rem', maxWidth: '600px', margin: '0 auto 2rem auto', color: 'var(--c-red)', fontWeight: 800 }}>
           I’m currently open to freelance work, collaborations, and creative opportunities.
         </p>
 

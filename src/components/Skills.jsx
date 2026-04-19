@@ -22,11 +22,11 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" style={{ padding: '4rem 2rem', display: 'flex', justifyContent: 'center', width: '100%', color: 'var(--text-dark)', position: 'relative', zIndex: 2 }}>
+    <section id="skills" style={{ padding: '7rem 2rem 2rem 2rem', display: 'flex', justifyContent: 'center', width: '100%', color: 'var(--text-dark)', position: 'relative', zIndex: 2 }}>
       <div style={{ maxWidth: '1200px', width: '100%' }}>
         
         {/* Section Header */}
-        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '4rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1.5rem' }}>
           <div style={{ 
             position: 'relative', 
             width: '40px', 
@@ -56,7 +56,7 @@ const Skills = () => {
         <div style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
-          gap: '2.5rem' 
+          gap: '1.5rem' 
         }}>
           {skillCategories.map((category, idx) => (
             <motion.div 
@@ -66,62 +66,51 @@ const Skills = () => {
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.5, ease: "easeOut" }}
               style={{
-                background: '#191717',
-                padding: '2.5rem 2rem',
-                clipPath: 'polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px))',
-                boxShadow: '0 15px 35px rgba(0,0,0,0.3)',
+                background: 'transparent',
+                padding: '1.5rem',
+                borderRadius: '8px',
+                boxShadow: '10px 10px 0 var(--c-red)',
                 position: 'relative',
-                border: '1px solid rgba(255,255,255,0.05)'
+                border: '4px solid var(--c-yellow)'
               }}
             >
-              {/* Accent bar */}
-              <div style={{ 
-                position: 'absolute', 
-                top: 0, 
-                left: 0, 
-                width: '100%', 
-                height: '3px', 
-                background: 'linear-gradient(90deg, var(--c-red, #E43D12), #5eb3ad)' 
-              }}></div>
 
               <h3 style={{ 
                 fontFamily: "'Playfair Display', Georgia, serif", 
-                fontSize: '1.8rem', 
-                color: '#fff', 
-                fontWeight: 500, 
-                marginBottom: '1.5rem',
-                borderBottom: '1px solid rgba(255,255,255,0.08)',
-                paddingBottom: '1rem'
+                fontSize: '1.6rem', 
+                color: 'var(--text-dark)', 
+                fontWeight: 900, 
+                textTransform: 'uppercase',
+                marginBottom: '1rem',
+                borderBottom: '2px solid rgba(0,0,0,0.1)',
+                paddingBottom: '0.5rem'
               }}>
                 {category.title}
               </h3>
 
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.8rem' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                 {category.skills.map((skill, sIdx) => (
                   <div key={sIdx} style={{
-                    padding: '0.6rem 1.2rem',
-                    color: '#fff',
+                    padding: '0.4rem 0.8rem',
+                    color: 'var(--text-dark)',
                     fontFamily: "'Fira Code', 'Courier New', monospace",
-                    fontSize: '0.95rem',
+                    fontSize: '0.9rem',
                     fontWeight: 800,
-                    backgroundColor: 'transparent',
-                    border: '2px solid var(--c-yellow, #EFB11D)',
-                    boxShadow: '0 0 12px rgba(239, 177, 29, 0.3)',
-                    clipPath: 'polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)',
-                    transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
+                    backgroundColor: '#fff',
+                    border: '2px solid var(--c-pink)',
+                    borderRadius: '4px',
+                    transition: 'all 0.2s ease',
                     cursor: 'pointer'
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = 'var(--c-yellow, #EFB11D)';
+                    e.currentTarget.style.backgroundColor = 'var(--c-pink)';
                     e.currentTarget.style.color = '#fff';
-                    e.currentTarget.style.transform = 'translateY(-4px) scale(1.05)';
-                    e.currentTarget.style.boxShadow = '0 12px 25px rgba(239, 177, 29, 0.5)';
+                    e.currentTarget.style.transform = 'translateY(-2px)';
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = 'transparent';
-                    e.currentTarget.style.color = '#fff';
-                    e.currentTarget.style.transform = 'translateY(0) scale(1)';
-                    e.currentTarget.style.boxShadow = '0 0 12px rgba(239, 177, 29, 0.3)';
+                    e.currentTarget.style.backgroundColor = '#fff';
+                    e.currentTarget.style.color = 'var(--text-dark)';
+                    e.currentTarget.style.transform = 'translateY(0)';
                   }}
                   >
                     {skill}

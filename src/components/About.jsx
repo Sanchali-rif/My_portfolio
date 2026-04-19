@@ -92,22 +92,14 @@ const About = () => {
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
             style={{
               position: 'relative',
-              background: '#191717', // slight dark brownish/grey tint like the design
+              background: '#191717',
               width: '100%',
               padding: '2rem 2.5rem',
-              clipPath: 'polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 40px 100%, 0 calc(100% - 40px))',
-              boxShadow: '0 30px 60px rgba(0,0,0,0.5)'
+              borderRadius: '8px',
+              border: '4px solid var(--c-yellow)',
+              boxShadow: '10px 10px 0 var(--c-red)'
             }}
           >
-            {/* Top gradient accent line */}
-            <div style={{ 
-              position: 'absolute', 
-              top: 0, 
-              left: 0, 
-              width: '100%', 
-              height: '3px', 
-              background: 'linear-gradient(90deg, var(--c-red, #E43D12), #5eb3ad)' 
-            }}></div>
 
             {/* Card Content Sections */}
             <div style={{ position: 'relative', zIndex: 1, borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '1rem', marginBottom: '1rem' }}>
