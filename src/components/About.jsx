@@ -5,7 +5,7 @@ const About = () => {
   const { scrollYProgress } = useScroll();
   const yPos = useTransform(scrollYProgress, [0, 1], [100, -100]);
   return (
-    <section id="about" style={{ padding: '8rem 2rem 4rem 2rem', display: 'flex', justifyContent: 'center', width: '100%', color: 'var(--text-dark)', position: 'relative', zIndex: 2, overflow: 'hidden' }}>
+    <section id="about" style={{ padding: '3rem 2rem 2rem 2rem', display: 'flex', justifyContent: 'center', width: '100%', color: 'var(--text-dark)', position: 'relative', zIndex: 2, overflow: 'hidden' }}>
       {/* Decorative left-side background gradient (Light Orange & Light Pink Mix) */}
       <motion.div style={{ position: 'absolute', top: '10%', left: '-10%', width: '50vw', height: '50vw', background: 'linear-gradient(135deg, rgba(255, 204, 153, 0.6), rgba(255, 182, 193, 0.5))', borderRadius: '50%', filter: 'blur(100px)', zIndex: 0, opacity: 0.7, y: yPos }} />
 

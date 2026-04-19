@@ -25,7 +25,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" style={{ padding: '7rem 2rem 2rem 2rem', color: 'var(--text-dark)' }}>
+    <section id="experience" style={{ padding: '3rem 2rem 2rem 2rem', color: 'var(--text-dark)' }}>
       <div style={{ maxWidth: '1000px', width: '100%', margin: '0 auto' }}>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

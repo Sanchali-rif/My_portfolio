@@ -12,7 +12,7 @@
   /* Typography */
   --font-sans: 'Smooch Sans', sans-serif;
   --font-cursive: 'Great Vibes', cursive;
-  
+
   --spacing: 1rem;
 }
 
@@ -28,7 +28,8 @@ body {
   font-family: var(--font-sans);
   overflow-x: hidden;
   line-height: 1.5;
-  cursor: none; /* Hide default cursor to use a custom one! */
+  cursor: none;
+  /* Hide default cursor to use a custom one! */
 }
 
 /* Glassmorphism utilities */
@@ -48,7 +49,12 @@ body {
 }
 
 /* Typography styles */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   font-weight: normal;
 }
@@ -80,9 +86,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 8px;
   height: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--c-bg);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--c-pink);
   border-radius: 4px;
@@ -92,9 +100,12 @@ h1, h2, h3, h4, h5, h6 {
 .custom-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .custom-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 /* Reset Links and Buttons */
@@ -108,4 +119,69 @@ button {
   cursor: none;
   border: none;
   font-family: inherit;
+}
+
+@media (max-width: 768px) {
+
+  /* Global Layout Scaling */
+  section {
+    padding: 3rem 1rem 1rem 1rem !important;
+  }
+
+  /* Flex Overrides for Wrapping */
+  #about>div {
+    flex-direction: column !important;
+    gap: 2.5rem !important;
+  }
+
+  #about>div>div {
+    flex: 1 1 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Adjusting Titles */
+  .title-sans {
+    font-size: clamp(3rem, 15vw, 5.5rem) !important;
+  }
+
+  /* Header section titles */
+  .section-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  .section-header span {
+    margin-left: 0 !important;
+    margin-top: 10px !important;
+  }
+
+  /* Specific Component Tweaks */
+  #contact div {
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+  }
+
+  /* Navbar Overrides */
+  header {
+    flex-direction: column !important;
+    gap: 0.8rem !important;
+    top: 1rem !important;
+    left: 1rem !important;
+    right: 1rem !important;
+    padding: 0.5rem !important;
+    background: rgba(235, 233, 225, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+  }
+
+  header nav {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 0.8rem !important;
+  }
+
+  header nav a {
+    font-size: 0.95rem !important;
+  }
 }

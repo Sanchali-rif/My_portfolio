@@ -17,7 +17,7 @@ export default function GithubGraph() {
   };
 
   return (
-    <section id="github-stats" style={{ padding: '4rem 2rem', color: 'var(--text-dark)' }}>
+    <section id="github-stats" style={{ padding: '2rem 2rem', color: 'var(--text-dark)' }}>
       <div style={{ maxWidth: '1000px', width: '100%', margin: '0 auto' }}>
         {/* Heading */}
         <motion.div 

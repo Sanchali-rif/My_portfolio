@@ -4,7 +4,7 @@ import { Mail } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" style={{ padding: '7rem 2rem 2rem 2rem', color: 'var(--text-dark)', textAlign: 'center' }}>
+    <section id="contact" style={{ padding: '3rem 2rem 2rem 2rem', color: 'var(--text-dark)', textAlign: 'center' }}>
       <motion.div 
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}

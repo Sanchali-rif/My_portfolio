@@ -16,7 +16,7 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" style={{ padding: '7rem 2rem 2rem 2rem', color: 'var(--text-dark)', position: 'relative', overflow: 'hidden' }}>
+    <section id="education" style={{ padding: '3rem 2rem 2rem 2rem', color: 'var(--text-dark)', position: 'relative', overflow: 'hidden' }}>
       {/* Decorative left-side background gradient (Light Yellow & Orange Mix) */}
       <motion.div style={{ position: 'absolute', top: '-10%', left: '-15%', width: '50vw', height: '50vw', background: 'linear-gradient(135deg, rgba(255, 235, 130, 0.7), rgba(255, 180, 80, 0.5))', borderRadius: '50%', filter: 'blur(100px)', zIndex: 0, opacity: 0.6, y: yPos }} />
 

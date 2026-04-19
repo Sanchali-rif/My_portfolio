@@ -6,7 +6,7 @@ const Project = () => {
   const yPos = useTransform(scrollYProgress, [0, 1], [100, -100]);
 
   return (
-    <section id="projects" style={{ padding: '7rem 2rem 2rem 2rem', color: 'var(--text-dark)', position: 'relative', overflow: 'hidden' }}>
+    <section id="projects" style={{ padding: '3rem 2rem 2rem 2rem', color: 'var(--text-dark)', position: 'relative', overflow: 'hidden' }}>
       {/* Decorative background element */}
       <motion.div style={{ position: 'absolute', top: '-10%', right: '-10%', width: '50vw', height: '50vw', background: 'var(--c-light-pink)', borderRadius: '50%', filter: 'blur(100px)', zIndex: 0, opacity: 0.5, y: yPos }} />
 
