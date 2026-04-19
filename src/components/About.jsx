@@ -10,67 +10,74 @@ const About = () => {
       <motion.div style={{ position: 'absolute', top: '10%', left: '-10%', width: '50vw', height: '50vw', background: 'linear-gradient(135deg, rgba(255, 204, 153, 0.6), rgba(255, 182, 193, 0.5))', borderRadius: '50%', filter: 'blur(100px)', zIndex: 0, opacity: 0.7, y: yPos }} />
 
       <div style={{ maxWidth: '1200px', width: '100%', display: 'flex', gap: '6rem', flexWrap: 'wrap', position: 'relative', zIndex: 1 }}>
-        
+
         {/* Left Column */}
         <div style={{ flex: '1 1 500px' }}>
-          
+
           {/* ABOUT ME Pre-header */}
           <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1.2rem' }}>
-            <div style={{ 
-              position: 'relative', 
-              width: '40px', 
-              height: '40px', 
-              borderRadius: '50%', 
-              border: '1.5px solid rgba(228, 61, 18, 0.4)', 
-              display: 'flex', 
-              alignItems: 'center', 
-              justifyContent: 'center' 
+            <div style={{
+              position: 'relative',
+              width: '40px',
+              height: '40px',
+              borderRadius: '50%',
+              border: '1.5px solid rgba(228, 61, 18, 0.4)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
             }}>
               <div style={{ width: '6px', height: '6px', backgroundColor: 'var(--c-red, #E43D12)', borderRadius: '50%' }}></div>
               <div style={{ position: 'absolute', left: '100%', top: '50%', width: '40px', height: '1.5px', backgroundColor: 'rgba(228, 61, 18, 0.4)' }}></div>
             </div>
-            <span style={{ 
-              color: 'var(--c-red, #E43D12)', 
-              letterSpacing: '5px', 
-              fontSize: '2rem', 
-              textTransform: 'uppercase', 
-              fontWeight: 900, 
-              marginLeft: '50px' 
+            <span style={{
+              color: 'var(--c-red, #E43D12)',
+              letterSpacing: '5px',
+              fontSize: '2rem',
+              textTransform: 'uppercase',
+              fontWeight: 900,
+              marginLeft: '50px'
             }}>
               About Me
             </span>
           </div>
 
           {/* Main Headline */}
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            style={{ 
-              fontSize: 'clamp(2.2rem, 3.5vw, 3.2rem)', 
-              fontFamily: "'Playfair Display', Georgia, serif", 
-              lineHeight: 1.1, 
+            style={{
+              fontSize: 'clamp(2.2rem, 3.5vw, 3.2rem)',
+              fontFamily: "'Playfair Display', Georgia, serif",
+              lineHeight: 1.1,
               marginBottom: '1.5rem',
               fontWeight: 500,
               color: 'var(--text-dark, #111)'
             }}
           >
-            I turn bold ideas <br/>
-            into <br/>
-            <i style={{ fontWeight: 'normal', fontStyle: 'italic', color: 'var(--c-yellow)' }}>experiences people <br/> remember.</i>
+            I turn bold ideas <br />
+            into <br />
+            <i style={{
+              fontWeight: 'normal',
+              fontStyle: 'italic',
+              background: 'linear-gradient(90deg, #f272ccff, #FF6600)',
+              WebkitBackgroundClip: 'text',
+              color: 'transparent', // using color: 'transparent' as fallback 
+              WebkitTextFillColor: 'transparent'
+            }}>experiences people <br /> remember.</i>
           </motion.h2>
 
           {/* Paragraphs */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            style={{ 
-              fontFamily: "'Fira Code', 'Courier New', monospace", 
-              fontSize: '1.05rem', 
+            style={{
+              fontFamily: "'Fira Code', 'Courier New', monospace",
+              fontSize: '1.05rem',
               fontWeight: 600,
-              lineHeight: 1.8, 
+              lineHeight: 1.8,
               color: '#222',
               maxWidth: '550px',
               marginBottom: '2rem'
@@ -90,7 +97,7 @@ const About = () => {
 
         {/* Right Column (Cyberpunk Cyber-Card) */}
         <div style={{ flex: '1 1 400px', display: 'flex', alignItems: 'center' }}>
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -112,7 +119,7 @@ const About = () => {
                 Current Focus
               </p>
               <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '2.4rem', color: '#fff', fontWeight: 500, lineHeight: 1.2 }}>
-                Full-Stack Web<br/>Development
+                Full-Stack Web<br />Development
               </h3>
             </div>
 
