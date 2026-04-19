@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 const Navbar = () => {
   const links = [
     { name: 'About me', href: '#about' },
+    { name: 'Skills', href: '#skills' },
     { name: 'Project', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Contact', href: '#contact' },

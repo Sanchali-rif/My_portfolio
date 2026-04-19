@@ -79,45 +79,7 @@ const About = () => {
             </p>
           </motion.div>
 
-          {/* Skill Tags */}
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
-            style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem' }}
-          >
-            {['REACT.JS', 'REACT NATIVE', 'PYTHON', 'JAVA', 'C', 'MYSQL', 'UI/UX', 'FIGMA', 'FIREBASE', 'MOTION', '3D / SPLINE', 'GRAPHIC DESIGN', 'GIT', 'GITHUB', 'VERCEL', 'RENDER', 'POSTMAN'].map((tag, idx) => (
-              <div key={idx} style={{
-                padding: '0.6rem 1.2rem',
-                border: '2px solid rgba(0,0,0,0.8)',
-                color: '#fff',
-                fontFamily: "'Fira Code', 'Courier New', monospace",
-                fontSize: '0.95rem',
-                fontWeight: 700,
-                letterSpacing: '1px',
-                clipPath: 'polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)',
-                background: '#1a1a1a',
-                transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
-                cursor: 'pointer'
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'var(--c-red, #E43D12)';
-                e.currentTarget.style.color = '#fff';
-                e.currentTarget.style.borderColor = 'var(--c-red, #E43D12)';
-                e.currentTarget.style.transform = 'translateY(-4px)';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#1a1a1a';
-                e.currentTarget.style.color = '#fff';
-                e.currentTarget.style.borderColor = 'rgba(0,0,0,0.8)';
-                e.currentTarget.style.transform = 'translateY(0)';
-              }}
-              >
-                {tag}
-              </div>
-            ))}
-          </motion.div>
+          {/* Skill tags moved to Skills section */}
 
         </div>
 
