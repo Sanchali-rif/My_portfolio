@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Project from './components/Project';
+import GithubGraph from './components/GithubGraph';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import ShapeGrid from './components/ShapeGrid';
@@ -22,6 +23,7 @@ function App() {
         <About />
         <Skills />
         <Project />
+        <GithubGraph />
         <Experience />
         <Contact />
       </main>

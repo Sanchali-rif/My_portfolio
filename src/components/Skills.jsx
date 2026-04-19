@@ -22,7 +22,7 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" style={{ padding: '8rem 2rem', display: 'flex', justifyContent: 'center', width: '100%', color: 'var(--text-dark)', position: 'relative', zIndex: 2 }}>
+    <section id="skills" style={{ padding: '4rem 2rem', display: 'flex', justifyContent: 'center', width: '100%', color: 'var(--text-dark)', position: 'relative', zIndex: 2 }}>
       <div style={{ maxWidth: '1200px', width: '100%' }}>
         
         {/* Section Header */}
@@ -104,24 +104,24 @@ const Skills = () => {
                     fontFamily: "'Fira Code', 'Courier New', monospace",
                     fontSize: '0.95rem',
                     fontWeight: 800,
-                    backgroundColor: 'rgba(228, 61, 18, 0.15)',
-                    border: '2px solid var(--c-red, #E43D12)',
-                    boxShadow: '0 0 12px rgba(228, 61, 18, 0.3)',
+                    backgroundColor: 'transparent',
+                    border: '2px solid var(--c-yellow, #EFB11D)',
+                    boxShadow: '0 0 12px rgba(239, 177, 29, 0.3)',
                     clipPath: 'polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px)',
                     transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
                     cursor: 'pointer'
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.backgroundColor = 'var(--c-red, #E43D12)';
+                    e.currentTarget.style.backgroundColor = 'var(--c-yellow, #EFB11D)';
                     e.currentTarget.style.color = '#fff';
                     e.currentTarget.style.transform = 'translateY(-4px) scale(1.05)';
-                    e.currentTarget.style.boxShadow = '0 12px 25px rgba(228, 61, 18, 0.5)';
+                    e.currentTarget.style.boxShadow = '0 12px 25px rgba(239, 177, 29, 0.5)';
                   }}
                   onMouseLeave={(e) => {
-                    e.currentTarget.style.backgroundColor = 'rgba(228, 61, 18, 0.15)';
+                    e.currentTarget.style.backgroundColor = 'transparent';
                     e.currentTarget.style.color = '#fff';
                     e.currentTarget.style.transform = 'translateY(0) scale(1)';
-                    e.currentTarget.style.boxShadow = '0 0 12px rgba(228, 61, 18, 0.3)';
+                    e.currentTarget.style.boxShadow = '0 0 12px rgba(239, 177, 29, 0.3)';
                   }}
                   >
                     {skill}

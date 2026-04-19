@@ -6,20 +6,42 @@ const Project = () => {
   const yPos = useTransform(scrollYProgress, [0, 1], [100, -100]);
 
   return (
-    <section id="projects" style={{ padding: '8rem 2rem', color: 'var(--text-dark)', position: 'relative', overflow: 'hidden' }}>
+    <section id="projects" style={{ padding: '4rem 2rem', color: 'var(--text-dark)', position: 'relative', overflow: 'hidden' }}>
       {/* Decorative background element */}
       <motion.div style={{ position: 'absolute', top: '-10%', right: '-10%', width: '50vw', height: '50vw', background: 'var(--c-light-pink)', borderRadius: '50%', filter: 'blur(100px)', zIndex: 0, opacity: 0.5, y: yPos }} />
 
       <div style={{ maxWidth: '1000px', width: '100%', margin: '0 auto', position: 'relative', zIndex: 1 }}>
-        <motion.h2 
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="title-cursive" 
-          style={{ marginBottom: '3rem', textAlign: 'center', color: 'var(--c-red)' }}
+          className="section-header"
+          style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', marginBottom: '3rem' }}
         >
-          Selected Project
-        </motion.h2>
+          <div style={{ 
+            position: 'relative', 
+            width: '40px', 
+            height: '40px', 
+            borderRadius: '50%', 
+            border: '1.5px solid rgba(228, 61, 18, 0.4)', 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center' 
+          }}>
+            <div style={{ width: '6px', height: '6px', backgroundColor: 'var(--c-red, #E43D12)', borderRadius: '50%' }}></div>
+            <div style={{ position: 'absolute', left: '100%', top: '50%', width: '40px', height: '1.5px', backgroundColor: 'rgba(228, 61, 18, 0.4)' }}></div>
+          </div>
+          <span style={{ 
+            color: 'var(--c-red, #E43D12)', 
+            letterSpacing: '5px', 
+            fontSize: '2rem', 
+            textTransform: 'uppercase', 
+            fontWeight: 900, 
+            marginLeft: '50px' 
+          }}>
+            Selected Project
+          </span>
+        </motion.div>
 
         <motion.div
            initial={{ opacity: 0, y: 50 }}

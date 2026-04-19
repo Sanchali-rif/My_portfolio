@@ -25,17 +25,39 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" style={{ padding: '8rem 2rem', color: 'var(--text-dark)' }}>
+    <section id="experience" style={{ padding: '4rem 2rem', color: 'var(--text-dark)' }}>
       <div style={{ maxWidth: '1000px', width: '100%', margin: '0 auto' }}>
-        <motion.h2 
-          initial={{ opacity: 0, y: 30 }}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="title-cursive" 
-          style={{ marginBottom: '4rem', color: 'var(--text-dark)' }}
+          className="section-header"
+          style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', marginBottom: '4rem' }}
         >
-          Experience
-        </motion.h2>
+          <div style={{ 
+            position: 'relative', 
+            width: '40px', 
+            height: '40px', 
+            borderRadius: '50%', 
+            border: '1.5px solid rgba(228, 61, 18, 0.4)', 
+            display: 'flex', 
+            alignItems: 'center', 
+            justifyContent: 'center' 
+          }}>
+            <div style={{ width: '6px', height: '6px', backgroundColor: 'var(--c-red, #E43D12)', borderRadius: '50%' }}></div>
+            <div style={{ position: 'absolute', left: '100%', top: '50%', width: '40px', height: '1.5px', backgroundColor: 'rgba(228, 61, 18, 0.4)' }}></div>
+          </div>
+          <span style={{ 
+            color: 'var(--c-red, #E43D12)', 
+            letterSpacing: '5px', 
+            fontSize: '2rem', 
+            textTransform: 'uppercase', 
+            fontWeight: 900, 
+            marginLeft: '50px' 
+          }}>
+            Experience
+          </span>
+        </motion.div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
           {experiences.map((exp, index) => (

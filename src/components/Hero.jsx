@@ -16,15 +16,14 @@ const Hero = () => {
       overflow: 'hidden'
     }}>
 
-      {/* Background Giant Text */}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 0.25, y: 0 }}
         transition={{ duration: 1 }}
         style={{
           position: 'absolute',
-          top: '6%', // ⛔ unchanged (keep as is)
-          fontSize: 'clamp(8rem, 25vw, 15rem)',
+          top: '3%', // ⛔ moved down to avoid navbar overlap
+          fontSize: 'clamp(6rem, 16vw, 10rem)', // 👈 increased size
           fontFamily: 'var(--font-sans)',
           fontWeight: 900,
           color: 'var(--c-red)',
@@ -47,9 +46,9 @@ const Hero = () => {
           height: '320px',
           borderRadius: '40px',
           overflow: 'hidden',
-          zIndex: 1,
+          zIndex: 2,
           boxShadow: '0 20px 40px rgba(0,0,0,0.1)',
-          marginTop: '5rem' // 👈 moved image DOWN
+          marginTop: '-80px' // 👈 moved image UP to overlap
         }}
       >
         <img
@@ -71,7 +70,7 @@ const Hero = () => {
         }}
       >
         <h1 style={{
-          fontSize: 'clamp(5rem, 18vw, 12rem)',
+          fontSize: 'clamp(4rem, 14vw, 8rem)', // 👈 increased size
           fontFamily: 'var(--font-sans)',
           fontWeight: 900,
           color: 'var(--c-red)',
