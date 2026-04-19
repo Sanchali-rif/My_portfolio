@@ -4,7 +4,7 @@ import { Mail } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" style={{ padding: '4rem 2rem 2rem 2rem', color: 'var(--text-dark)', textAlign: 'center' }}>
+    <section id="contact" style={{ padding: '7rem 2rem 2rem 2rem', color: 'var(--text-dark)', textAlign: 'center' }}>
       <motion.div 
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -18,7 +18,7 @@ const Contact = () => {
           padding: '0.5rem 1rem', 
           borderRadius: '50px', 
           fontSize: '0.9rem', 
-          marginBottom: '2rem',
+          marginBottom: '1rem',
           textTransform: 'uppercase',
           fontWeight: 600
         }}>
@@ -26,13 +26,13 @@ const Contact = () => {
         </span>
         
         <h2 className="title-sans" style={{ color: 'var(--c-yellow)', marginBottom: '1.5rem', lineHeight: 0.9 }}>Let's build</h2>
-        <h2 className="title-sans" style={{ color: 'var(--text-dark)', marginBottom: '3rem', lineHeight: 0.9 }}>something impactful.</h2>
+        <h2 className="title-sans" style={{ color: 'var(--text-dark)', marginBottom: '1.5rem', lineHeight: 0.9 }}>something impactful.</h2>
 
-        <p style={{ fontSize: '1.4rem', maxWidth: '600px', margin: '0 auto 4rem auto', color: 'var(--c-red)', fontWeight: 500 }}>
+        <p style={{ fontSize: '1.4rem', maxWidth: '600px', margin: '0 auto 2rem auto', color: 'var(--c-red)', fontWeight: 500 }}>
           I’m currently open to freelance work, collaborations, and creative opportunities.
         </p>
 
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', marginBottom: '4rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanchalisaha05@gmail.com" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.2rem', fontWeight: 600, color: 'var(--text-dark)' }}>
             <Mail /> Gmail
           </a>
@@ -44,7 +44,7 @@ const Contact = () => {
           </a>
         </div>
 
-        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '4rem' }}>
+        <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '2rem' }}>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanchalisaha05@gmail.com" target="_blank" rel="noreferrer" style={{
             background: 'var(--c-yellow)', color: 'var(--text-dark)', padding: '1rem 3rem', borderRadius: '50px', fontSize: '1.2rem', fontWeight: 800, textTransform: 'uppercase'
           }}>
