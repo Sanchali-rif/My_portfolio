@@ -8,10 +8,12 @@ const Education = () => {
     {
       school: "RCC Institute of Information Technology",
       degree: "B.Tech in Information Technology • 2nd Year",
+      link: "https://www.google.com/search?gs_ssp=eJzj4tLP1TcwKivJyS43YPRiK0pOzswsAQBBDwZ5&q=rcciit&oq=rcc&gs_lcrp=EgZjaHJvbWUqDAgCEC4YJxiABBiKBTIHCAAQABiPAjIKCAEQLhixAxiABDIMCAIQLhgnGIAEGIoFMgcIAxAAGIAEMgoIBBAAGLEDGIAEMgoIBRAAGLEDGIAEMgoIBhAAGLEDGIAEMg0IBxAAGIMBGLEDGIAEMgcICBAAGIAEMgcICRAAGI8C0gEMODcwMTMxN2owajE1qAIIsAIB8QWoZXqwp6XnSA&sourceid=chrome&ie=UTF-8"
     },
     {
       school: "PM SHRI Kendriya Vidyalaya, Cossipore",
       degree: "High School Education",
+      link: "https://www.google.com/search?q=pm+shri+kendriya+vidyalaya+cossipore&sca_esv=a3d84300357be008&biw=1639&bih=774&sxsrf=ANbL-n6p6mfkFdxcGfIMDvNwLxezF-QjSw%3A1776686368501&ei=IBXmaZScHtXiseMPlaPtsQI&gs_ssp=eJwNxskNgCAQAMD4NbEHHvqW9QRKsAuuVSIKQmK0e53XlFW7tgAaLn9q2GkhGvr0HBk32AEyGHCcBX1wVj0azifQSrLOLnU8SN6SI7s9TXKvJLczr_Tynw45uxiS_QDzIB25&oq=pm+shri+kendriya+vidyalaya+co&gs_lp=Egxnd3Mtd2l6LXNlcnAiHXBtIHNocmkga2VuZHJpeWEgdmlkeWFsYXlhIGNvKgIIADIUEC4YgAQYkQIYxwEYigUYjgUYrwEyBRAAGIAEMgsQLhiABBjHARivATILEC4YgAQYxwEYrwEyBRAAGIAEMgUQABiABDIFEAAYgAQyCxAAGIAEGJECGIoFMgUQABiABDIFEAAYgAQyIxAuGIAEGJECGMcBGIoFGI4FGK8BGJcFGNwEGN4EGOAE2AEBSIInUNsDWLobcAF4AZABAZgBkQKgAasSqgEFMC44LjS4AQHIAQD4AQGYAgqgAp4WwgIKEAAYsAMY1gQYR8ICFhAuGIAEGLADGEMYxwEYigUYjgUYrwHCAhMQLhiABBjHARgnGIoFGI4FGK8BwgILEAAYgAQYhgMYigXCAggQABiABBiiBMICBRAAGO8FwgIgEC4YgAQYxwEYigUYjgUYrwEYlwUY3AQY3gQY4ATYAQHCAg4QLhiABBjHARiOBRivAZgDAIgGAZAGCboGBggBEAEYFJIHCTEuMy41LjctMaAHqr8CsgcFMC4zLjW4B4wNwgcHMC4xLjIuN8gHVYAIAA&sclient=gws-wiz-serp"
     }
   ];
 
@@ -70,7 +72,15 @@ const Education = () => {
                 boxShadow: '10px 10px 0 var(--c-red)'
               }}
             >
-              <h3 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)', fontWeight: 900, textTransform: 'uppercase', marginBottom: '0.2rem', letterSpacing: '-1px', color: 'var(--text-dark)', lineHeight: 1.1 }}>{edu.school}</h3>
+              <h3 style={{ fontSize: 'clamp(1.8rem, 3.5vw, 2.5rem)', fontWeight: 900, textTransform: 'uppercase', marginBottom: '0.2rem', letterSpacing: '-1px', color: 'var(--text-dark)', lineHeight: 1.1 }}>
+                {edu.link ? (
+                  <a href={edu.link} target="_blank" rel="noreferrer" style={{ textDecoration: 'none', color: 'inherit', cursor: 'pointer' }}>
+                    {edu.school}
+                  </a>
+                ) : (
+                  edu.school
+                )}
+              </h3>
               <p style={{ fontSize: '1.4rem', color: 'var(--c-pink)', fontWeight: 800, marginBottom: '0.5rem' }}>
                 {edu.degree}
               </p>
