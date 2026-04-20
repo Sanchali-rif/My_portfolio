@@ -105,9 +105,9 @@ const Hero = () => {
           Frontend Developer • UI/UX Designer • Creative Technologist
         </p>
         <p style={{
-          fontSize: '1.2rem',
-          color: 'var(--text-dark)',
-          opacity: 0.8,
+          fontSize: '2rem',
+          fontFamily: 'var(--font-cursive)',
+          color: '#FF1493',
           margin: 0 // 👈 remove extra space
         }}>
           Crafting digital experiences at the intersection of design, motion, and technology.

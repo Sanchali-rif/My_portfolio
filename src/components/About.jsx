@@ -106,7 +106,8 @@ const About = () => {
               position: 'relative',
               background: '#191717',
               width: '100%',
-              padding: '2rem 2.5rem',
+              maxWidth: '380px',
+              padding: '1.5rem 2rem',
               borderRadius: '8px',
               border: '4px solid var(--c-yellow)',
               boxShadow: '10px 10px 0 var(--c-red)'
@@ -114,29 +115,29 @@ const About = () => {
           >
 
             {/* Card Content Sections */}
-            <div style={{ position: 'relative', zIndex: 1, borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '1rem', marginBottom: '1rem' }}>
-              <p style={{ color: 'var(--c-yellow)', fontFamily: "'Fira Code', 'Courier New', monospace", textTransform: 'uppercase', letterSpacing: '2px', fontSize: '1rem', fontWeight: 800, marginBottom: '0.5rem' }}>
+            <div style={{ position: 'relative', zIndex: 1, borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '0.5rem', marginBottom: '0.5rem' }}>
+              <p style={{ color: 'var(--c-yellow)', fontFamily: 'var(--font-cursive)', fontSize: '2rem', fontWeight: 400, marginBottom: '0.2rem' }}>
                 Current Focus
               </p>
-              <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '2.4rem', color: '#fff', fontWeight: 500, lineHeight: 1.2 }}>
+              <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '2rem', color: '#fff', fontWeight: 500, lineHeight: 1.2 }}>
                 Full-Stack Web<br />Development
               </h3>
             </div>
 
-            <div style={{ position: 'relative', zIndex: 1, borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '1rem', marginBottom: '1rem' }}>
-              <p style={{ color: 'var(--c-yellow)', fontFamily: "'Fira Code', 'Courier New', monospace", textTransform: 'uppercase', letterSpacing: '2px', fontSize: '1rem', fontWeight: 800, marginBottom: '0.5rem' }}>
+            <div style={{ position: 'relative', zIndex: 1, borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '0.5rem', marginBottom: '0.5rem' }}>
+              <p style={{ color: 'var(--c-yellow)', fontFamily: 'var(--font-cursive)', fontSize: '2rem', fontWeight: 400, marginBottom: '0.2rem' }}>
                 Location
               </p>
-              <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.8rem', color: '#fff', fontWeight: 500 }}>
+              <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.6rem', color: '#fff', fontWeight: 500 }}>
                 Kolkata, India <span style={{ fontWeight: 800 }}>IN</span>
               </h3>
             </div>
 
             <div style={{ position: 'relative', zIndex: 1 }}>
-              <p style={{ color: 'var(--c-yellow)', fontFamily: "'Fira Code', 'Courier New', monospace", textTransform: 'uppercase', letterSpacing: '2px', fontSize: '1rem', fontWeight: 800, marginBottom: '0.5rem' }}>
+              <p style={{ color: 'var(--c-yellow)', fontFamily: 'var(--font-cursive)', fontSize: '2rem', fontWeight: 400, marginBottom: '0.2rem' }}>
                 Availability
               </p>
-              <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.8rem', color: '#fff', fontWeight: 500 }}>
+              <h3 style={{ fontFamily: "'Playfair Display', Georgia, serif", fontSize: '1.6rem', color: '#fff', fontWeight: 500 }}>
                 Open to Freelance & Collab
               </h3>
             </div>
