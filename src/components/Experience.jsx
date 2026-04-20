@@ -77,7 +77,7 @@ const Experience = () => {
               <p style={{ fontSize: '1.6rem', color: 'var(--c-pink)', fontWeight: 800, marginBottom: '0.5rem' }}>
                 {exp.company}
                 {exp.link && (
-                 <a href={exp.link} target="_blank" rel="noreferrer" style={{ marginLeft: '12px', fontSize: '1.2rem', textDecoration: 'underline', fontWeight: 700 }}>View Site</a>
+                 <a href={exp.link} target="_blank" rel="noreferrer" style={{ marginLeft: '12px', fontSize: '1.2rem', textDecoration: 'underline', fontWeight: 700, cursor: 'pointer' }}>View Site</a>
                 )}
               </p>
               <ul style={{ listStyleType: 'none', padding: 0, fontSize: '1.4rem', fontWeight: 600, lineHeight: 1.4, color: '#222' }}>
