@@ -40,7 +40,8 @@ const Navbar = () => {
           border: '3px solid var(--c-red)',
           padding: '0.4rem 0.6rem',
           borderRadius: '12px',
-          display: 'inline-block'
+          display: 'inline-block',
+          cursor: 'pointer'
         }}
       >
         ss.
@@ -58,7 +59,8 @@ const Navbar = () => {
               color: 'var(--c-red)',
               textDecoration: 'none',
               transition: 'transform 0.2s ease',
-              display: 'inline-block'
+              display: 'inline-block',
+              cursor: 'pointer'
             }}
             onMouseEnter={(e) => e.target.style.transform = 'scale(1.1)'}
             onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
