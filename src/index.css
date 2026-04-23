@@ -129,12 +129,12 @@ button {
   }
 
   /* Flex Overrides for Wrapping */
-  #about>div {
+  .about-container {
     flex-direction: column !important;
     gap: 2.5rem !important;
   }
 
-  #about>div>div {
+  .about-col-left, .about-col-right {
     flex: 1 1 100% !important;
     max-width: 100% !important;
   }

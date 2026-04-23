@@ -5,14 +5,14 @@ const About = () => {
   const { scrollYProgress } = useScroll();
   const yPos = useTransform(scrollYProgress, [0, 1], [100, -100]);
   return (
-    <section id="about" style={{ padding: '3rem 2rem 2rem 2rem', display: 'flex', justifyContent: 'center', width: '100%', color: 'var(--text-dark)', position: 'relative', zIndex: 2, overflow: 'hidden' }}>
+    <section id="about" className="about-section" style={{ padding: '3rem 2rem 2rem 2rem', display: 'flex', justifyContent: 'center', width: '100%', color: 'var(--text-dark)', position: 'relative', zIndex: 2, overflow: 'hidden' }}>
       {/* Decorative left-side background gradient (Light Orange & Light Pink Mix) */}
       <motion.div style={{ position: 'absolute', top: '10%', left: '-10%', width: '50vw', height: '50vw', background: 'linear-gradient(135deg, rgba(255, 204, 153, 0.6), rgba(255, 182, 193, 0.5))', borderRadius: '50%', filter: 'blur(100px)', zIndex: 0, opacity: 0.7, y: yPos }} />
 
-      <div style={{ maxWidth: '1200px', width: '100%', display: 'flex', gap: '6rem', flexWrap: 'wrap', position: 'relative', zIndex: 1 }}>
+      <div className="about-container" style={{ maxWidth: '1200px', width: '100%', display: 'flex', gap: '6rem', flexWrap: 'wrap', position: 'relative', zIndex: 1 }}>
 
         {/* Left Column */}
-        <div style={{ flex: '1 1 500px' }}>
+        <div className="about-col-left" style={{ flex: '1 1 500px' }}>
 
           {/* ABOUT ME Pre-header */}
           <div style={{ display: 'flex', alignItems: 'center', marginBottom: '1.2rem' }}>
@@ -45,7 +45,7 @@ const About = () => {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
             style={{
               fontSize: 'clamp(2.2rem, 3.5vw, 3.2rem)',
               fontFamily: "'Playfair Display', Georgia, serif",
@@ -71,7 +71,7 @@ const About = () => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
             transition={{ delay: 0.2 }}
             style={{
               fontFamily: "'Fira Code', 'Courier New', monospace",
@@ -96,11 +96,11 @@ const About = () => {
         </div>
 
         {/* Right Column (Cyberpunk Cyber-Card) */}
-        <div style={{ flex: '1 1 400px', display: 'flex', alignItems: 'center' }}>
+        <div className="about-col-right" style={{ flex: '1 1 400px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
             style={{
               position: 'relative',
