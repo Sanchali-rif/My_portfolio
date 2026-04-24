@@ -10,42 +10,42 @@ const Skills = () => {
     {
       title: "Development",
       skills: [
-        { name: "JavaScript", icon: <SiJavascript /> },
-        { name: "Python", icon: <SiPython /> },
-        { name: "Java", icon: <FaJava /> },
-        { name: "C", icon: <SiC /> },
-        { name: "React.js", icon: <FaReact /> },
-        { name: "HTML5", icon: <SiHtml5 /> },
-        { name: "CSS3", icon: <SiCss /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss /> }
+        { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
+        { name: "Python", icon: <SiPython color="#3776AB" /> },
+        { name: "Java", icon: <FaJava color="#5382a1" /> },
+        { name: "C", icon: <SiC color="#A8B9CC" /> },
+        { name: "React.js", icon: <FaReact color="#61DAFB" /> },
+        { name: "HTML5", icon: <SiHtml5 color="#E34F26" /> },
+        { name: "CSS3", icon: <SiCss color="#1572B6" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss color="#06B6D4" /> }
       ]
     },
     {
       title: "Backend",
       skills: [
-        { name: "MySQL", icon: <SiMysql /> },
-        { name: "Firebase", icon: <SiFirebase /> }
+        { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
+        { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> }
       ]
     },
     {
       title: "Design & Creative",
       skills: [
-        { name: "UI/UX Design", icon: <MdDesignServices /> },
-        { name: "Graphic Design", icon: <FaPaintBrush /> },
-        { name: "Figma", icon: <SiFigma /> },
-        { name: "Framer", icon: <SiFramer /> },
-        { name: "Canva", icon: <SiCanva /> },
-        { name: "Affinity", icon: <SiAffinity /> },
-        { name: "Spline (3D)", icon: <TbBox /> }
+        { name: "UI/UX Design", icon: <MdDesignServices color="#FF4081" /> },
+        { name: "Graphic Design", icon: <FaPaintBrush color="#E040FB" /> },
+        { name: "Figma", icon: <SiFigma color="#F24E1E" /> },
+        { name: "Framer", icon: <SiFramer color="#0055FF" /> },
+        { name: "Canva", icon: <SiCanva color="#00C4CC" /> },
+        { name: "Affinity", icon: <SiAffinity color="#1E1E1E" /> },
+        { name: "Spline (3D)", icon: <TbBox color="#737373" /> }
       ]
     },
     {
       title: "Tools & Platforms",
       skills: [
-        { name: "Git", icon: <SiGit /> },
-        { name: "GitHub", icon: <SiGithub /> },
-        { name: "Vercel", icon: <SiVercel /> },
-        { name: "Render", icon: <SiRender /> }
+        { name: "Git", icon: <SiGit color="#F05032" /> },
+        { name: "GitHub", icon: <SiGithub color="#181717" /> },
+        { name: "Vercel", icon: <SiVercel color="#000000" /> },
+        { name: "Render", icon: <SiRender color="#46E3B7" /> }
       ]
     }
   ];
