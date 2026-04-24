@@ -1,23 +1,52 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { SiJavascript, SiPython, SiC, SiHtml5, SiCss, SiTailwindcss, SiMysql, SiFirebase, SiFigma, SiFramer, SiCanva, SiAffinity, SiGit, SiGithub, SiVercel, SiRender } from 'react-icons/si';
+import { FaJava, FaReact, FaPaintBrush } from 'react-icons/fa';
+import { MdDesignServices } from 'react-icons/md';
+import { TbBox } from 'react-icons/tb';
 
 const Skills = () => {
   const skillCategories = [
     {
       title: "Development",
-      skills: ["JavaScript", "Python", "Java", "C", "React.js", "HTML5", "CSS3", "Tailwind CSS"]
+      skills: [
+        { name: "JavaScript", icon: <SiJavascript /> },
+        { name: "Python", icon: <SiPython /> },
+        { name: "Java", icon: <FaJava /> },
+        { name: "C", icon: <SiC /> },
+        { name: "React.js", icon: <FaReact /> },
+        { name: "HTML5", icon: <SiHtml5 /> },
+        { name: "CSS3", icon: <SiCss /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss /> }
+      ]
     },
     {
       title: "Backend",
-      skills: ["MySQL", "Firebase"]
+      skills: [
+        { name: "MySQL", icon: <SiMysql /> },
+        { name: "Firebase", icon: <SiFirebase /> }
+      ]
     },
     {
       title: "Design & Creative",
-      skills: ["UI/UX Design", "Graphic Design", "Figma", "Framer", "Canva", "Affinity", "Spline (3D)"]
+      skills: [
+        { name: "UI/UX Design", icon: <MdDesignServices /> },
+        { name: "Graphic Design", icon: <FaPaintBrush /> },
+        { name: "Figma", icon: <SiFigma /> },
+        { name: "Framer", icon: <SiFramer /> },
+        { name: "Canva", icon: <SiCanva /> },
+        { name: "Affinity", icon: <SiAffinity /> },
+        { name: "Spline (3D)", icon: <TbBox /> }
+      ]
     },
     {
       title: "Tools & Platforms",
-      skills: ["Git", "GitHub", "Vercel", "Render"]
+      skills: [
+        { name: "Git", icon: <SiGit /> },
+        { name: "GitHub", icon: <SiGithub /> },
+        { name: "Vercel", icon: <SiVercel /> },
+        { name: "Render", icon: <SiRender /> }
+      ]
     }
   ];
 
@@ -91,6 +120,9 @@ const Skills = () => {
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                 {category.skills.map((skill, sIdx) => (
                   <div key={sIdx} style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.4rem',
                     padding: '0.4rem 0.8rem',
                     color: 'var(--text-dark)',
                     fontFamily: "'Fira Code', 'Courier New', monospace",
@@ -113,7 +145,10 @@ const Skills = () => {
                     e.currentTarget.style.transform = 'translateY(0)';
                   }}
                   >
-                    {skill}
+                    <span style={{ display: 'flex', alignItems: 'center', fontSize: '1.1rem' }}>
+                      {skill.icon}
+                    </span>
+                    {skill.name}
                   </div>
                 ))}
               </div>
