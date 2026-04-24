@@ -24,7 +24,7 @@ const Skills = () => {
       title: "Backend",
       skills: [
         { name: "MySQL", icon: <SiMysql color="#4479A1" /> },
-        { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> }
+        { name: "Firebase", icon: <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2Bh8Cgz1HP623XpnVajWfwODcBSa2XC9m8Q&s" alt="Firebase" style={{ width: '20px', height: '20px', borderRadius: '4px' }} /> }
       ]
     },
     {
@@ -32,10 +32,10 @@ const Skills = () => {
       skills: [
         { name: "UI/UX Design", icon: <MdDesignServices color="#FF4081" /> },
         { name: "Graphic Design", icon: <FaPaintBrush color="#E040FB" /> },
-        { name: "Figma", icon: <SiFigma color="#F24E1E" /> },
+        { name: "Figma", icon: <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlyf2x2w47ik4ClgaQtJ_qCaXF_Ru6JlUR0Q&s" alt="Figma" style={{ width: '20px', height: '20px', borderRadius: '4px' }} /> },
         { name: "Framer", icon: <SiFramer color="#0055FF" /> },
-        { name: "Canva", icon: <SiCanva color="#00C4CC" /> },
-        { name: "Affinity", icon: <SiAffinity color="#1E1E1E" /> },
+        { name: "Canva", icon: <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQURXSVJcJLHRlQApPQ2jJBniDiuSsdos84MA&s" alt="Canva" style={{ width: '20px', height: '20px', borderRadius: '4px' }} /> },
+        { name: "Affinity", icon: <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Affinity_%28App%29_Logo.svg/1280px-Affinity_%28App%29_Logo.svg.png" alt="Affinity" style={{ width: '20px', height: '20px', borderRadius: '4px' }} /> },
         { name: "Spline (3D)", icon: <TbBox color="#737373" /> }
       ]
     },
