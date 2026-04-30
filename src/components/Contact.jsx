@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail } from 'lucide-react';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
   return (
@@ -32,16 +33,16 @@ const Contact = () => {
           I’m currently open to freelance work, collaborations, and creative opportunities.
         </p>
 
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sanchalisaha05@gmail.com" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.2rem', fontWeight: 600, color: 'var(--text-dark)', cursor: 'pointer' }}>
-            <Mail /> Gmail
-          </a>
-          <a href="https://linkedin.com/in/sanchali-saha-6b4aa6328" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.2rem', fontWeight: 600, color: 'var(--text-dark)', cursor: 'pointer' }}>
-            LinkedIn
-          </a>
-          <a href="https://github.com/Sanchali-rif" target="_blank" rel="noreferrer" style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '1.2rem', fontWeight: 600, color: 'var(--text-dark)', cursor: 'pointer' }}>
-            GitHub
-          </a>
+        <div style={{ display: 'flex', justifyContent: 'center', gap: '2.5rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
+          <motion.a whileHover={{ scale: 1.2 }} href="https://mail.google.com/mail/?view=cm&fs=1&to=sanchalisaha05@gmail.com" target="_blank" rel="noreferrer" style={{ color: 'var(--text-dark)', cursor: 'pointer' }} aria-label="Email">
+            <Mail size={40} />
+          </motion.a>
+          <motion.a whileHover={{ scale: 1.2 }} href="https://linkedin.com/in/sanchali-saha-6b4aa6328" target="_blank" rel="noreferrer" style={{ color: 'var(--text-dark)', cursor: 'pointer' }} aria-label="LinkedIn">
+            <FaLinkedin size={36} />
+          </motion.a>
+          <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/Sanchali-rif" target="_blank" rel="noreferrer" style={{ color: 'var(--text-dark)', cursor: 'pointer' }} aria-label="GitHub">
+            <FaGithub size={36} />
+          </motion.a>
         </div>
 
         <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', marginBottom: '2rem' }}>
