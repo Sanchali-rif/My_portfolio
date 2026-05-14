@@ -34,10 +34,10 @@ const Contact = () => {
         </p>
 
         <div style={{ display: 'flex', justifyContent: 'center', gap: '2.5rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
-          <motion.a whileHover={{ scale: 1.2 }} href="https://mail.google.com/mail/?view=cm&fs=1&to=sanchalisaha05@gmail.com" target="_blank" rel="noreferrer" style={{ color: 'var(--text-dark)', cursor: 'pointer' }} aria-label="Email">
+          <motion.a whileHover={{ scale: 1.2 }} href="https://mail.google.com/mail/?view=cm&fs=1&to=sanchalisaha05@gmail.com" target="_blank" rel="noreferrer" style={{ color: '#EA4335', cursor: 'pointer' }} aria-label="Email">
             <Mail size={40} />
           </motion.a>
-          <motion.a whileHover={{ scale: 1.2 }} href="https://linkedin.com/in/sanchali-saha-6b4aa6328" target="_blank" rel="noreferrer" style={{ color: 'var(--text-dark)', cursor: 'pointer' }} aria-label="LinkedIn">
+          <motion.a whileHover={{ scale: 1.2 }} href="https://linkedin.com/in/sanchali-saha-6b4aa6328" target="_blank" rel="noreferrer" style={{ color: '#0A66C2', cursor: 'pointer' }} aria-label="LinkedIn">
             <FaLinkedin size={36} />
           </motion.a>
           <motion.a whileHover={{ scale: 1.2 }} href="https://github.com/Sanchali-rif" target="_blank" rel="noreferrer" style={{ color: 'var(--text-dark)', cursor: 'pointer' }} aria-label="GitHub">
